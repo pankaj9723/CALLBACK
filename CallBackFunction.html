@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* function filter(numbers) {
+          let results = [];
+          for (const number of numbers) {
+              if (number % 2 != 0) {
+              results.push(number);
+              }
+          }
+          return results;
+          }
+
+          let numbers = [1, 2, 4, 7, 3, 5, 6];
+          console.log(filter(numbers)); */
+
+      // function
+      /*  function greet(name, callback) {
+                  console.log('Hi' + ' ' + name);
+                  callback();
+              }
+
+              // callback function
+              function callMe() {
+                  console.log('I am callback function');
+              }
+
+              // passing function as an argument
+              greet('Peter', callMe);
+       */
+
+      //  program that shows the delay in execution
+      /*
+      function greet() {
+          console.log('Hello world');
+      }
+
+      function sayName(name) {
+          console.log('Hello' + ' ' + name);
+      }
+
+      // calling the function
+      setTimeout(greet, 2000);
+      sayName('John'); */
+
+      // callBack function
+
+      /* const calculate =(a,b,operation) => {
+          return operation(a,b);
+      } */
+
+      // METHOD 1
+      /* const result = calculate(3,4,function(num1,num2){
+          return num1+num2;
+      })
+
+      console.log(result);
+
+      const multiply_result =  multiply = calculate(5,4,function(a,b){
+          return a*b;
+      })
+
+      console.log(multiply_result); */
+
+      // METHOD 2
+
+      /* const subtraction = (a,b) => a-b;
+      const subResult = calculate(8,3,subtraction);
+      console.log(subResult); */
+
+      // METHOD 3
+      /* function multiplies(a,b){
+      return a*b;
+      }
+
+      const m_result = calculate( 3, 2, multiplies);
+      console.log(m_result); */
+
+      /* let addition = (a,b)=>{
+          let c =a+b;
+          return c;
+      }
+      console.log(addition(5,7));
+       */
+
+      /*  function show(a) {
+        console.log("I am show Function" + a);
+      }
+      function geeky(callback) {
+        let a = 101;
+        callback(a);
+      }
+      geeky(show); */
+
+      /// different ways
+
+      /*  function geeky(callback) {
+        let b = 102;
+        callback(b);
+      }
+      geeky(function show(b) {
+        console.log("I am show Function " + b);
+      });
+
+
+      //different ways
+
+      function geeky(callback) {
+        let c = 103;
+        callback(c);
+      }
+      geeky(function (c) {
+        console.log("I am show Function " + c);
+      });
+
+
+      /// next method
+
+      function geeky(callback){
+        let d =105;
+        callback(d);
+    
+      }
+      geeky(d => console.log("hello i m here" + d)); */
+
+      // call back function
+      /*  function addNum(a, b) {
+    return a + b;
+}
+ 
+function multiplyNum(a, b) {
+    return a * b;
+}
+ 
+ 
+function operate(func, a, b) {
+    return func(a, b);
+}
+ 
+let result = operate(addNum, 10, 10)
+document.write(result + "<br/>") //20
+ 
+let result1 = operate(multiplyNum, 150, 10)
+document.write(result1) */
+
+      /* function add(a,b){
+      return a+b;
+    }
+
+    function multiply(a,b){
+      return a*b;
+    }
+    
+function callback(operate,a,b){
+return operate(a,b);
+}
+
+
+
+let result=callback(add,3,4);
+console.log(result);
+
+let result1=callback(multiply,3,4);
+console.log(result1); */
+
+
+
+
+      // Synchronous
+      function geeky(callback) {
+        callback();
+      }
+      geeky(function show() {
+        console.log("I am show Function");
+      });
+      console.log("End");
+
+
+
+      // Asynchronous
+      setTimeout(function show() {
+        console.log("I am show Function");
+      }, 5000);
+      console.log("End");
+
+
+    </script>
+  </body>
+</html>
